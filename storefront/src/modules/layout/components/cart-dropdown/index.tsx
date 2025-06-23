@@ -85,13 +85,14 @@ const CartDropdown = ({
           >
             <ShoppingCart className="w-8 h-8" />
 
-            {
+            {totalItems > 0 && (
               <span className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 bg-red-500 text-white text-xs font-bold rounded-full px-2 py-0.5">
                 {totalItems}
               </span>
-            }
+            )}
           </LocalizedClientLink>
         </Popover.Button>
+
         <Transition
           show={cartDropdownOpen}
           as={Fragment}
