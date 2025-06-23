@@ -27,15 +27,7 @@ const Hero = async () => {
         </span>
 
         {/* Category Buttons */}
-        <div className="flex flex-wrap gap-3 justify-center">
-          <LocalizedClientLink
-            href="/store"
-            className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
-            data-testid="nav-store-link"
-          >
-            <Button variant="secondary">{"Browse Store"}</Button>
-          </LocalizedClientLink>
-
+        {/* <div className="flex flex-wrap gap-3 justify-center">
           {topLevelCategories.map((cat) => (
             <LocalizedClientLink
               href={`/categories/${cat.handle}`}
@@ -44,6 +36,16 @@ const Hero = async () => {
               <Button variant="secondary">{cat.name}</Button>
             </LocalizedClientLink>
           ))}
+        </div> */}
+
+        <div className="flex flex-wrap gap-3 justify-center">
+          <LocalizedClientLink
+            href="/store"
+            className="txt-compact-xlarge-plus hover:text-ui-fg-base uppercase"
+            data-testid="nav-store-link"
+          >
+            <Button variant="secondary">{"Browse Store"}</Button>
+          </LocalizedClientLink>
         </div>
 
         <a
